@@ -1,0 +1,135 @@
+/* General Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e293b; /* Dark blue-gray background */
+    color: #e5e7eb;
+    line-height: 1.8;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container Styling */
+.container {
+    width: 85%;
+    margin: 20px auto;
+    background-color: #334155; /* Darker grayish-blue background */
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #0f172a; /* Deep navy background */
+    color: white;
+    padding: 14px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 8px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: #38bdf8;
+    background-color: #1e293b;
+    border-radius: 5px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Main Section */
+.main-section {
+    background-color: #1e293b;
+    padding: 60px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 6px 18px rgba(255, 255, 255, 0.1);
+}
+
+.main-section h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.main-section p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Features Grid */
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.features-list li {
+    background: #475569;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-list li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.15);
+}
+
+.features-list h2 {
+    font-size: 1.5rem;
+    color: #facc15;
+    margin-bottom: 10px;
+}
+
+.features-list p {
+    font-size: 1rem;
+    color: #e5e7eb;
+}
+
+/* Responsive Features List */
+@media (max-width: 600px) {
+    .features-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f172a;
+    color: #e5e7eb;
+    font-size: 1rem;
+}

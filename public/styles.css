@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1e293b;
+  background-size: cover;
+  background-position: center;
+  color: #f8fafc;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Container Styling */
+.container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #334155;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #0f172a;
+  color: white;
+  padding: 14px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  color: #f8fafc;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+  color: #38bdf8;
+  background-color: #1e293b;
+  border-radius: 5px;
+}
+
+/* Main Section Styling */
+.main-section {
+  background-color: #1e293b;
+  padding: 60px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(255, 255, 255, 0.1);
+}
+
+.main-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+/* Features List Styling */
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.features-list li {
+  background: #475569;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-list li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.15);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0f172a;
+  color: #f8fafc;
+  font-size: 1rem;
+}
+
+/* Form Styling */
+form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background-color: #1e293b;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+button:hover {
+  background-color: #334155;
+}
+
+/* Dashboard Styling */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard h1 {
+  text-align: center;
+  color: #38bdf8;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #475569;
+}
+
+th {
+  background-color: #0f172a;
+  color: white;
+}
